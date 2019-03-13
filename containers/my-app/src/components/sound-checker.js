@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import Nav from './nav';
 
 class SoundChecker extends Component {
   render() {
     return (
       <div className="SoundChecker">
+        <Nav />
         <header className="SoundChecker-header">
-          <p>
+          <h1>
             SoundChecker
-          </p>
+          </h1>
         </header>
       </div>
     );
