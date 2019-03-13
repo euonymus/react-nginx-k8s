@@ -3,13 +3,13 @@ import Nav from './nav';
 import SoundPlayer from './sound-player';
 
 const soundInfo = {
-  "key": "Sazanka",
-  "name":        "サザンカ",
+  "key": "Akaiha",
+  "name":        "赤い葉",
   "album":       "Lip",
-  "file":        "Sazanka.mp3",
+  "file":        "akaiha.mp3",
   "type":        "sound",
   "order":       "3",
-  "comment":     "2018年、日本放送協会（NHK）\n平昌オリンピックの放送テーマソング。\n「夢を追う人を応援する人」の目線で、\nやさしく、強く、包み込む名作。",
+  "comment":     "紅葉する京都をイメージした日本的な曲",
   "active":      true
 }
 class SoundChecker extends Component {
