@@ -1,0 +1,23 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    app: my-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      pod: my-app
+  template:
+    metadata:
+      labels:
+        pod: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: euonymus/simple-react:1.1
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
